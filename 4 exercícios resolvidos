@@ -1,0 +1,35 @@
+#Exercício 1: Escreva "Olá, mundo!" na tela.
+
+msg = 'Olá, mundo!'
+print(msg)
+
+
+
+#Exercício 2: Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas.
+
+name = input('Digite seu nome: ')
+print('É um prazer te conhecer, {}!'.format(name))
+
+
+
+#Exercício 3: Crie um programa que leia dois números e mostre a soma entre eles.
+
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite outro número: '))
+s = n1+n2
+print('A soma entre {} e {} é igual a {}.'.format(n1, n2, s))
+
+
+
+#Exercício 4: Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele.
+
+a = input('Digite algo: ')
+
+print('O tipo primitivo do objeto {} é {}.'.format(a, type(a))) # type mostra o tipo primitivo do objeto
+print('O objeto {} tem somente espaços?'.format(a), a.isspace())
+print('O objeto {} é um número?'.format(a), a.isnumeric())
+print('O objeto {} é alfabético?'.format(a), a.isalpha())
+print('O objeto {} é alfanumérico?'.format(a), a.isalnum())
+print('O objeto {} está somente em letras maiúsculas?'.format(a), a.isupper())
+print('O objeto {} está somente em letras minúsculas?'.format(a), a.islower())
+print('O objeto {} está capitalizado?'.format(a), a.istitle()) # O objeto está capitalizado se conter letra maiúscula e minúscula
