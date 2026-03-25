@@ -1,0 +1,9 @@
+#Exercício 11: Faça um programa que leia a largura e a altura de uma parede em metros, calcule a sua área e a quantidade de tinta necessária para pintá-la,
+#sabendo que cada litro de tinta pinta uma área de 2m².
+
+l1 = float(input('Qual a largura da parede em metros? '))
+l2 = float(input('Qual a altura da parede em metros? '))
+a = l1*l2
+t = a/2
+
+print('A parede tem {} m². Você precisará de {} l de tinta por demão.'.format(a,t))
