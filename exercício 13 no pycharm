@@ -1,0 +1,7 @@
+#Exercício 13: Faça um algortimo que leia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
+
+salario = float(input('Qual o salário atual do funcionário? R$'))
+novo = salario+(salario*15/100)
+
+print('O salário atual de R${:.2f} vai aumentar 15%, ficando no valor de R${:.2f}!'.format(salario, novo))
+
