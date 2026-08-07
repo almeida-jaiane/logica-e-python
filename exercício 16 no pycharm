@@ -1,0 +1,16 @@
+#Exercício 16: Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira.
+
+import math
+n = float(input('Digite um número: '))
+print('O valor que você digitou é {} e a sua porção inteira é {}.'.format(n, math.trunc(n)))
+
+#Também é possível importar diretamente o truncate:
+
+'''from math import trunc
+n = float(input('Digite um número: '))
+print('O número que você digitou é {} e a sua porção inteira é {}.'.format(n, trunc(n)))'''
+
+#Também da para ter o mesmo resultado sem importar nada, apenas usando o int:
+
+'''n = float(input('Digite um valor: '))
+print('O valor que você digitou é {} e a sua parte inteira é {}.'.format(n, int(n)))'''
