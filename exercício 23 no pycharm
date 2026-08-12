@@ -1,0 +1,25 @@
+#Exercício 23: Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados.
+
+'''num = int(input('Digite um número: '))
+n = str(num)
+print('Analisando o número {}...'.format(num))
+print('Sua unidade é {}.'.format(n[3]))
+print('Sua dezena é {}.'.format(n[2]))
+print('Sua centena é {}.'.format(n[1]))
+print('Sua milhar é {}.'.format(n[0]))'''
+
+#Dá pra fazer a divisão dos números transformando em string, mas apenas para um número de milhar, caso contrário, vai dar erro.
+
+#Forma matemática de fazer:
+
+num = int(input('Digite um número: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print('Sua unidade: {}.'.format(u))
+print('Sua dezena: {}.'.format(d))
+print('Sua centena: {}.'.format(c))
+print('Sua milhar: {}.'.format(m))
+
+#Pensar no // como uma ferramenta que move o algarismo desejado para o final, e no % 10 como uma ferramenta que pega o algarismo que ficou no final
