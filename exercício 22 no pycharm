@@ -1,0 +1,25 @@
+#Exercício 22: Crie um programa que leia o nome completo de uma pessoa.
+
+nome = str(input('Qual seu nome completo? ')).strip() #strip já corta os espaços no início e no fim do nome para evitar excesso desnecessário
+print('Analisando seu nome...')
+
+#Mostre o nome com todas as letras maiúsculas:
+
+print('Seu nome com todas as letras maiúsculas fica {}.'.format(nome.upper()))
+
+#O nome com todas minúsculas:
+
+print('Seu nome com todas as letras minúsculas fica {}.'.format(nome.lower()))
+
+#Quantas letras sem considerar espaços:
+
+print('Seu nome tem {} letras no total.'.format(len(nome) - nome.count(' '))) #cout vai contar a quantidade de espaços no meio e substrair do len
+
+#Quantas letras tem o primeiro nome:
+
+#print('Seu primeiro nome tem {} letras.'.format(nome.find(' '))) #find vai encontrar o primeiro espaço e informar sua posição
+
+#Usando o split:
+
+separa = nome.split()
+print('Seu primeiro nome é {} e tem {} letras.'.format(separa[0], len(separa[0])))
