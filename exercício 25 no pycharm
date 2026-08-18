@@ -1,0 +1,10 @@
+#Exercício 25: Crie um programa que leia o nome o nome de uma pessoa e diga se ela tem 'silva' no nome.
+
+nome = str(input('Digite seu nome completo: ')).strip()    #strip para remover espaços no começo e final
+print('No seu nome tem "Silva"? ' , 'silva' in nome.lower())   # o in vai pesquisar dentro de toda a cadeia
+
+#OUTRA FORMATAÇÃO DE ESTRUTURA DO CÓDIGO:
+
+
+#nome = str(input('Digite seu nome completo: ')).strip()
+#print('No seu nome tem "Silva"? {}'.format('silva' in nome.lower()))
