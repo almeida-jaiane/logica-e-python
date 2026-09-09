@@ -1,0 +1,5 @@
+numero = int(input('Digite um número e descubra se ele é PAR ou ÍMPAR: '))
+if numero % 2 == 0:
+    print('O número {} é PAR!'.format(numero))
+else:
+    print('o número {} é ÍMPAR!'.format(numero))
