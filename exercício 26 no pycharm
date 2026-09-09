@@ -1,4 +1,4 @@
-#Exercício 25: Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra “A”, em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
+#Exercício 26: Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra “A”, em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
 
 frase = str(input('Escreva uma frase: ')).strip().upper()
 print('Essa frase possui {} vezes a letra "A". '.format(frase.count('A')))
