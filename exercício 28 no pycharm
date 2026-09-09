@@ -1,0 +1,10 @@
+from random import randint
+from time import sleep
+computador = randint(0,5) #faz o computador gerar um número aleatório de 0 a 5
+num = int(input('Adivinhe o número que estou pensando... Dica: é entre 0 e 5 '))
+print('E o resultado foi...')
+sleep(3)
+if num == computador:
+    print('Você acertou! Parabéns!')
+else:
+    print('Você perdeu! Eu pensei no número {} e não no {}!'.format(computador, num))
