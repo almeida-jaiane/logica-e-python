@@ -1,0 +1,5 @@
+distancia = float(input('Qual a distância percorrida em KM? '))
+if distancia <= 200:
+    print('O valor da viagem será de R${:.2f}.'.format(distancia*.50))
+else:
+    print('O valor da viagem será de R${:.2f}.'.format(distancia*.45))
